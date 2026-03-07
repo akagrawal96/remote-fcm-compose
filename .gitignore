@@ -1,15 +1,86 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ========================
+# Android / Gradle
+# ========================
+
+.gradle/
+build/
+app/build/
 local.properties
+captures/
+
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Gradle wrapper
+gradle-app.setting
+!gradle-wrapper.jar
+
+# ========================
+# IDE
+# ========================
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android Studio navigation cache
+.navigation/
+.cxx/
+
+# VS Code
+.vscode/
+
+# ========================
+# OS Files
+# ========================
+
+.DS_Store
+Thumbs.db
+
+# ========================
+# Logs
+# ========================
+
+*.log
+
+# ========================
+# Firebase / Google
+# ========================
+
+google-services.json
+firebase.json
+.firebase/
+
+# ========================
+# Secrets / Tokens
+# ========================
+
+.env
+.env.local
+secrets.properties
+apikey.properties
+
+# ========================
+# Keystore / Signing
+# ========================
+
+*.jks
+*.keystore
+keystore.properties
+
+# ========================
+# NDK / Native
+# ========================
+
+obj/
+externalNativeBuild/
+
+# ========================
+# Generated / build outputs
+# ========================
+
+output.json
+output-metadata.json
