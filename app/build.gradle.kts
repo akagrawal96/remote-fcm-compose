@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -56,6 +57,7 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material.icons)
     implementation(libs.androidx.compose.animation)
+    implementation(libs.google.googleid)
 
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
@@ -115,4 +117,8 @@ dependencies {
     // ── Paging ───────────────────────────────────────────
     implementation(libs.paging.runtime)
     implementation(libs.paging.compose)
+
+    // ── Auth
+    // ───────────────────────────────────────────
+    implementation(libs.google.play.services.auth)
 }
